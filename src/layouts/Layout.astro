@@ -1,0 +1,181 @@
+---
+import '../styles/global.css';
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>{title} | Dowagiac Conservation Club</title>
+		<meta name="description" content="Experience top-notch hunting, fishing, and shooting sports at Dowagiac Conservation Club. Join us for steel shoots, 3D archery, trap nights, and conservation events in a great outdoor setting." />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;500;700;800&display=swap" rel="stylesheet">
+		<link rel="icon" type="image/png" href="/favicon.png" />
+	</head>
+	<body>
+        <header class="header">
+            <div class="container header-container">
+                <a href="/"><h1 class="logo">Dowagiac Conservation Club</h1></a>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="/" class="nav-link">HOME</a></li>
+                        <li><a href="/calendar" class="nav-link">CALENDAR</a></li>
+                        <li><a href="/archery" class="nav-link">ARCHERY</a></li>
+                        <li><a href="/trap-shooting" class="nav-link">TRAP SHOOTING</a></li>
+                        <li><a href="/member-information" class="nav-link">MEMBER INFORMATION</a></li>
+                        <li><a href="/location" class="nav-link">LOCATION</a></li>
+                        <li><a href="/contact" class="nav-link">CONTACT</a></li>
+                        <li><a href="/steel-shoot-challenge" class="nav-link btn-outline">STEEL SHOOT CHALLENGE</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+		<main>
+			<slot />
+		</main>
+
+        <footer class="footer-rich">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <h3 class="logo mb-4">Dowagiac Conservation Club</h3>
+                        <p class="footer-pledge-small">"I give my pledge as an American to save and faithfully defend from waste the natural resources of my country."</p>
+                    </div>
+                    <div class="footer-links-col">
+                        <h4 class="footer-title">Quick Links</h4>
+                        <ul class="footer-list">
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/calendar">Calendar</a></li>
+                            <li><a href="/member-information">Member Info</a></li>
+                            <li><a href="/contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-col">
+                        <h4 class="footer-title">Activities</h4>
+                        <ul class="footer-list">
+                            <li><a href="/archery">Archery</a></li>
+                            <li><a href="/trap-shooting">Trap Shooting</a></li>
+                            <li><a href="/steel-shoot-challenge">Steel Shoot</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact-col">
+                        <h4 class="footer-title">Contact</h4>
+                        <ul class="footer-list">
+                            <li>54551 M51 North</li>
+                            <li>Dowagiac MI 49047</li>
+                            <li><a href="mailto:info@dowagiacconservation.org">info@dowagiacconservation.org</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p class="copyright">&copy; 2026 Dowagiac Conservation Club. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <style>
+            .footer-rich {
+                background-color: var(--clr-dark);
+                color: rgba(255,255,255,0.7);
+                padding: 5rem 0 2rem;
+            }
+            .footer-grid {
+                display: grid;
+                grid-template-columns: 2fr 1fr 1fr 1fr;
+                gap: 3rem;
+                margin-bottom: 3rem;
+                text-align: left;
+                width: 100%;
+            }
+            .footer-brand .logo {
+                font-size: 1.5rem;
+                color: var(--clr-white);
+                margin-bottom: 1rem;
+                display: block;
+            }
+            .footer-pledge-small {
+                font-family: var(--font-body);
+                font-style: italic;
+                line-height: 1.6;
+                font-size: 0.95rem;
+                color: var(--clr-moss);
+            }
+            .footer-title {
+                color: var(--clr-gold);
+                font-family: var(--font-heading);
+                font-size: 1.2rem;
+                margin-bottom: 1.5rem;
+                font-weight: 600;
+            }
+            .footer-list {
+                display: flex;
+                flex-direction: column;
+                gap: 0.75rem;
+                list-style: none;
+                padding: 0;
+            }
+            .footer-list a {
+                color: rgba(255,255,255,0.7);
+                transition: var(--transition-fast);
+            }
+            .footer-list a:hover {
+                color: var(--clr-white);
+                padding-left: 5px;
+            }
+            .footer-bottom {
+                padding-top: 2rem;
+                border-top: 1px solid rgba(255,255,255,0.1);
+                text-align: center;
+                width: 100%;
+                font-size: 0.9rem;
+                color: rgba(255,255,255,0.5);
+            }
+            @media(max-width: 992px) {
+                .footer-grid { grid-template-columns: 1fr 1fr; }
+            }
+            @media(max-width: 576px) {
+                .footer-grid { grid-template-columns: 1fr; }
+            }
+        </style>
+
+        <script>
+            // Simple mobile menu toggle
+            const toggle = document.querySelector('.mobile-menu-toggle');
+            const nav = document.querySelector('.nav');
+            
+            if (toggle && nav) {
+                toggle.addEventListener('click', () => {
+                    nav.classList.toggle('active');
+                    toggle.classList.toggle('active');
+                });
+            }
+
+            // Add intersection observer for scroll animations
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.slide-up, .fade-up').forEach(el => {
+                observer.observe(el);
+            });
+        </script>
+	</body>
+</html>

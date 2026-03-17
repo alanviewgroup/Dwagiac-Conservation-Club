@@ -1,0 +1,133 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Steel Shoot Challenge">
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title fade-up">Steel Shoot Challenge</h1>
+            <p class="fade-up delay-1">Hear the Ring. Feel the Rush. Steel Shooting Starts Here.</p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container grid-layout fade-up delay-2">
+            <div class="text-block">
+                <h3>Put your aim, speed, and accuracy to the test!</h3>
+                <p>Participants will engage a series of steel targets in a timed shooting event designed to challenge shooters of all skill levels. Whether you’re a seasoned marksman or just looking to test your skills, the Steel Shoot Challenge is a fun, high-energy event that brings the thrill of steel target shooting to life!</p>
+                
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h4>How It Works</h4>
+                        <ul>
+                            <li>Shooters will fire at multiple steel plate targets</li>
+                            <li>Targets must ring to count as a hit</li>
+                            <li>Fastest time with the most accurate hits wins</li>
+                            <li>Multiple rounds may be available</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <h4>What to Expect</h4>
+                        <ul>
+                            <li>Safe, structured shooting environment</li>
+                            <li>Range safety officer supervision at all times</li>
+                            <li>Friendly competition and bragging rights!</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <h4>Who Can Participate</h4>
+                        <ul>
+                            <li>Open to eligible participants (age requirements apply)</li>
+                            <li>All firearms and ammunition must meet range safety guidelines</li>
+                            <li>Eye and ear protection required</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="schedule-card">
+                <h3>2026 Schedule</h3>
+                <p><strong>Steele Shooting Schedule</strong></p>
+                <p>2026 Dates TBA</p>
+            </div>
+        </div>
+    </section>
+</Layout>
+
+<style>
+    .page-header {
+        padding: 140px 0 60px;
+        background-color: var(--clr-forest);
+        color: var(--clr-white);
+        text-align: center;
+    }
+    .page-title {
+        color: var(--clr-gold);
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    .content-section {
+        padding: 5rem 0;
+    }
+    .grid-layout {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 3rem;
+    }
+    .text-block {
+        background: var(--clr-white);
+        padding: 3rem;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    }
+    .text-block h3 {
+        color: var(--clr-forest);
+        margin-bottom: 1.5rem;
+        font-size: 1.8rem;
+    }
+    .text-block p {
+        margin-bottom: 1.5rem;
+    }
+    .info-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+    .info-card {
+        background: var(--clr-light);
+        padding: 2rem;
+        border-radius: 8px;
+        border-top: 4px solid var(--clr-gold);
+    }
+    .info-card h4 {
+        color: var(--clr-forest);
+        margin-bottom: 1rem;
+    }
+    .info-card ul {
+        padding-left: 1.2rem;
+    }
+    .info-card li {
+        margin-bottom: 0.5rem;
+        list-style-type: disc;
+    }
+    .schedule-card {
+        background: var(--clr-olive);
+        color: var(--clr-white);
+        padding: 2.5rem;
+        border-radius: 12px;
+    }
+    .schedule-card h3 {
+        color: var(--clr-gold);
+        margin-bottom: 1.5rem;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+        padding-bottom: 0.5rem;
+    }
+    .schedule-card p {
+        font-size: 1.1rem;
+    }
+    @media(max-width: 992px) {
+        .grid-layout { grid-template-columns: 1fr; }
+        .info-grid { grid-template-columns: 1fr; }
+    }
+</style>

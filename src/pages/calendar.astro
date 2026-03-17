@@ -1,0 +1,334 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Calendar">
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title fade-up">Calendar</h1>
+            <p class="fade-up delay-1">Stay up to date with events at the Dowagiac Conservation Club.</p>
+        </div>
+    </section>
+
+    <section class="content-section bg-light-alt">
+        <div class="container grid-container">
+            <!-- Calendar/Events Placeholder Column -->
+            <div class="events-col slide-up delay-2">
+                <div class="calendar-wrapper">
+                    <div class="calendar-header">
+                        <button class="cal-nav-btn">&laquo;</button>
+                        <h3 class="cal-month-year">March 2026</h3>
+                        <button class="cal-nav-btn">&raquo;</button>
+                    </div>
+                    <div class="calendar-grid p-4">
+                        <div class="cal-weekdays">
+                            <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+                        </div>
+                        <div class="cal-days">
+                            <div class="cal-day prev-month">22</div><div class="cal-day prev-month">23</div><div class="cal-day prev-month">24</div><div class="cal-day prev-month">25</div><div class="cal-day prev-month">26</div><div class="cal-day prev-month">27</div><div class="cal-day prev-month">28</div>
+                            <div class="cal-day">1</div><div class="cal-day">2</div><div class="cal-day">3</div><div class="cal-day">4</div><div class="cal-day">5</div><div class="cal-day">6</div><div class="cal-day">7</div>
+                            <div class="cal-day">8</div><div class="cal-day has-event">9</div><div class="cal-day">10</div><div class="cal-day">11</div><div class="cal-day">12</div><div class="cal-day">13</div><div class="cal-day has-event">14</div>
+                            <div class="cal-day">15</div><div class="cal-day">16</div><div class="cal-day">17</div><div class="cal-day">18</div><div class="cal-day">19</div><div class="cal-day">20</div><div class="cal-day has-event">21</div>
+                            <div class="cal-day">22</div><div class="cal-day">23</div><div class="cal-day">24</div><div class="cal-day">25</div><div class="cal-day">26</div><div class="cal-day">27</div><div class="cal-day">28</div>
+                            <div class="cal-day">29</div><div class="cal-day">30</div><div class="cal-day">31</div><div class="cal-day next-month">1</div><div class="cal-day next-month">2</div><div class="cal-day next-month">3</div><div class="cal-day next-month">4</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="events-list mt-5">
+                    <h3 class="section-title text-xl mb-4">Upcoming & Current Events</h3>
+                    
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="event-month">Mar</span>
+                            <span class="event-day">09</span>
+                        </div>
+                        <div class="event-details">
+                            <h4 class="event-title">Membership Meeting</h4>
+                            <p class="event-time flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gold"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                7:30 PM - 9:00 PM
+                            </p>
+                            <p class="event-desc mt-1 text-sm text-olive">Monthly meeting to discuss club events and conservation efforts.</p>
+                        </div>
+                    </div>
+
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="event-month">Mar</span>
+                            <span class="event-day">14</span>
+                        </div>
+                        <div class="event-details">
+                            <h4 class="event-title">Steel Shoot Challenge</h4>
+                            <p class="event-time flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gold"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                9:00 AM - 1:00 PM
+                            </p>
+                            <p class="event-desc mt-1 text-sm text-olive">Test your speed and accuracy. Registration starts at 8:30 AM.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="event-month">Mar</span>
+                            <span class="event-day">21</span>
+                        </div>
+                        <div class="event-details">
+                            <h4 class="event-title">Trap Shooting League</h4>
+                            <p class="event-time flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gold"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                6:00 PM - 9:00 PM
+                            </p>
+                            <p class="event-desc mt-1 text-sm text-olive">Weekly trap shooting event open to eligible members.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Important Info Column -->
+            <div class="info-col slide-up delay-3">
+                <div class="text-block h-full">
+                    <h3>Important Range Information</h3>
+                    <p class="highlight-box"><strong>RANGE MOWING AND MAINTENANCE OCCUR AS WEATHER AND VOLUNTEER TIME ALLOW AND WON'T APPEAR ON CALENDAR. TALK TO THE VOLUNTEER TO SEE HOW SOON YOU CAN SHOOT.</strong></p>
+                    <p>Ranges and Lake Access are for use of Members only, or as approved by the Board of Directors. Be ready to show your current membership card if asked. Unless otherwise noted in calendar, ranges are open Monday thru Sunday 9 a.m. to sunset. Read RANGE RULES before using ranges.</p>
+                    
+                    <h3 class="mt-5 text-xl">Hunter Safety Classes</h3>
+                    <p>Dates have not been set for 2026.</p>
+                    <p class="text-sm">When future dates are set Club Members with email addresses on file will be notified of the dates and how to register. To search for classes in other locations go to: <a href="https://www.michigan.gov/dnr/things-to-do/hunting/education" target="_blank" rel="noopener noreferrer" class="text-link">Michigan DNR Hunter Education</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</Layout>
+
+<style>
+    .page-header {
+        padding: 140px 0 60px;
+        background-color: var(--clr-forest);
+        color: var(--clr-white);
+        text-align: center;
+        background-image: linear-gradient(rgba(28, 51, 39, 0.85), rgba(28, 51, 39, 0.85)), url('/hero_bg.png');
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .page-title {
+        color: var(--clr-gold);
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .content-section {
+        padding: 5rem 0;
+    }
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        align-items: flex-start;
+    }
+    
+    /* Calendar Widget */
+    .calendar-wrapper {
+        background: var(--clr-white);
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        overflow: hidden;
+    }
+    
+    .calendar-header {
+        background: var(--clr-forest);
+        color: var(--clr-white);
+        padding: 1rem 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .cal-nav-btn {
+        background: none;
+        border: none;
+        color: var(--clr-gold);
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: var(--transition-fast);
+    }
+    
+    .cal-nav-btn:hover {
+        color: var(--clr-white);
+        transform: scale(1.1);
+    }
+    
+    .cal-month-year {
+        font-family: var(--font-heading);
+        font-weight: 600;
+        margin: 0;
+    }
+    
+    .calendar-grid {
+        padding: 1.5rem;
+    }
+    
+    .cal-weekdays {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        text-align: center;
+        font-weight: 700;
+        font-size: 0.85rem;
+        color: var(--clr-olive);
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+    }
+    
+    .cal-days {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 0.5rem;
+    }
+    
+    .cal-day {
+        aspect-ratio: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        font-size: 1rem;
+        font-weight: 500;
+        color: var(--clr-dark);
+        transition: var(--transition-fast);
+        cursor: pointer;
+        position: relative;
+    }
+    
+    .cal-day:hover {
+        background-color: var(--clr-light);
+        color: var(--clr-forest);
+    }
+    
+    .cal-day.prev-month, .cal-day.next-month {
+        color: #ccc;
+    }
+    
+    .cal-day.has-event {
+        background-color: rgba(198, 168, 124, 0.2);
+        color: var(--clr-forest);
+        font-weight: 700;
+        border: 2px solid var(--clr-gold);
+    }
+    
+    .cal-day.has-event:hover {
+        background-color: var(--clr-gold);
+        color: var(--clr-white);
+    }
+    
+    /* Events List */
+    .section-title {
+        color: var(--clr-forest);
+        font-family: var(--font-heading);
+        font-weight: 700;
+    }
+    
+    .event-card {
+        display: flex;
+        background: var(--clr-white);
+        border-radius: 8px;
+        margin-bottom: 1rem;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+        overflow: hidden;
+        border-left: 4px solid var(--clr-gold);
+        transition: var(--transition-fast);
+    }
+    
+    .event-card:hover {
+        transform: translateX(5px);
+        box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+    }
+    
+    .event-date {
+        background: var(--clr-light);
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-width: 80px;
+        border-right: 1px solid #eee;
+    }
+    
+    .event-month {
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        color: var(--clr-olive);
+        font-weight: 700;
+    }
+    
+    .event-day {
+        font-size: 1.5rem;
+        color: var(--clr-forest);
+        font-weight: 800;
+        font-family: var(--font-heading);
+    }
+    
+    .event-details {
+        padding: 1rem 1.5rem;
+    }
+    
+    .event-title {
+        color: var(--clr-forest);
+        font-size: 1.1rem;
+        margin-bottom: 0.25rem;
+    }
+    
+    /* Text Block Info Column */
+    .text-block {
+        background: var(--clr-white);
+        padding: 2.5rem;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    }
+    
+    .text-block h3 {
+        color: var(--clr-forest);
+        margin-bottom: 1rem;
+    }
+    
+    .text-block p {
+        margin-bottom: 1.5rem;
+        color: var(--clr-dark);
+        line-height: 1.7;
+    }
+    
+    .highlight-box {
+        background-color: rgba(198, 168, 124, 0.1);
+        border-left: 4px solid var(--clr-gold);
+        padding: 1rem 1.25rem;
+        border-radius: 0 8px 8px 0;
+        color: var(--clr-forest);
+    }
+    
+    /* Utilities */
+    .bg-light-alt { background-color: #eef1ec; }
+    .mt-1 { margin-top: 0.25rem; }
+    .mt-4 { margin-top: 1.5rem; }
+    .mt-5 { margin-top: 3rem; }
+    .mb-3 { margin-bottom: 1rem; }
+    .mb-4 { margin-bottom: 1.5rem; }
+    .flex { display: flex; }
+    .items-center { align-items: center; }
+    .gap-1 { gap: 0.25rem; }
+    .text-xl { font-size: 1.5rem; }
+    .text-sm { font-size: 0.9rem; }
+    .text-olive { color: var(--clr-olive); }
+    .text-gold { color: var(--clr-gold); }
+    .text-dark { color: var(--clr-dark); }
+    .font-medium { font-weight: 500; }
+    .opacity-50 { opacity: 0.5; }
+    .h-full { height: 100%; }
+    
+    @media (max-width: 992px) {
+        .grid-container {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>

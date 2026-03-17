@@ -1,0 +1,108 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Archery">
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title fade-up">Archery</h1>
+            <p class="fade-up delay-1">Explore archery at the Dowagiac Conservation Club! Enjoy target practice and events for all ages and skill levels in a safe and supportive outdoor environment.</p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container grid-layout fade-up delay-2">
+            <div class="text-block">
+                <h3>Take Aim: Experience the Ultimate Archery Course</h3>
+                <p>Step into the woods and test your skills on our all-Rinehart 30 target archery course, designed for both fun and challenge. Winding through the natural landscape, our course features diverse shot opportunities, from close-range precision to long-distance accuracy.</p>
+                <p>Shooters will encounter elevated platforms, uphill shots, tight brush gaps, and even a floating target on a raft in our pond! Distances range from 8 yards on the flying carp shot to an impressive 65 yards on the buffalo target, ensuring a variety of skill-building opportunities for archers of all levels.</p>
+                <p>We host Sunday morning shoots throughout the year, providing regular opportunities to practice, compete, and connect with fellow archers. We also host a Traditional Shoot that lasts an entire weekend, bringing together archers for a great time of shooting and camaraderie.</p>
+                <p>We continuously upgrade and enhance the course each year to keep things fresh and exciting. Whether you're honing your skills or just out for a great day of shooting, our archery course offers an experience unlike any other.</p>
+                <p><strong>We welcome all shooters, traditional and compound.</strong> Come challenge yourself and see what makes Dowagiac Conservation Club’s archery range one of the best in the area!</p>
+            </div>
+            
+            <div class="schedule-card">
+                <h3>2026 Schedule</h3>
+                <h4>3-D Archery Shoot (8am-12pm)</h4>
+                <ul>
+                    <li>May 17th</li>
+                    <li>June 14th</li>
+                    <li>July 12th</li>
+                    <li>Aug 9th & 23rd</li>
+                    <li>Sept 13th & 27th</li>
+                </ul>
+                
+                <h4>Additional Saturday Night Shoot</h4>
+                <ul>
+                    <li>Sept 12th (4pm - 10pm)</li>
+                </ul>
+
+                <h4>Traditional Bow Shoot Weekend</h4>
+                <ul>
+                    <li>June 26th through 28th</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</Layout>
+
+<style>
+    .page-header {
+        padding: 140px 0 60px;
+        background-color: var(--clr-forest);
+        color: var(--clr-white);
+        text-align: center;
+        background-image: linear-gradient(rgba(28, 51, 39, 0.9), rgba(28, 51, 39, 0.9)), url('/hero_bg.png');
+        background-size: cover;
+        background-position: center;
+    }
+    .page-title {
+        color: var(--clr-gold);
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    .content-section {
+        padding: 5rem 0;
+    }
+    .grid-layout {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 3rem;
+    }
+    .text-block {
+        background: var(--clr-white);
+        padding: 3rem;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    }
+    .text-block h3, .text-block h4 {
+        color: var(--clr-forest);
+        margin-bottom: 1rem;
+    }
+    .text-block h4 { margin-top: 2rem; font-size: 1.2rem; }
+    .text-block p {
+        margin-bottom: 1rem;
+    }
+    .schedule-card {
+        background: var(--clr-olive);
+        color: var(--clr-white);
+        padding: 2.5rem;
+        border-radius: 12px;
+    }
+    .schedule-card h3 {
+        color: var(--clr-gold);
+        margin-bottom: 1.5rem;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+        padding-bottom: 0.5rem;
+    }
+    .schedule-card ul {
+        margin-bottom: 1.5rem;
+    }
+    .schedule-card li {
+        padding: 0.5rem 0;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    @media(max-width: 992px) {
+        .grid-layout { grid-template-columns: 1fr; }
+    }
+</style>
