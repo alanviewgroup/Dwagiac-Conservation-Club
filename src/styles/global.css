@@ -172,10 +172,9 @@ a { text-decoration: none; color: inherit; }
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('hero_bg.png');
+    background-image: url('/hero_bg.png');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     margin-top: 0;
 }
 
