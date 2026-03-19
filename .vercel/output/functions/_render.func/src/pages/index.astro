@@ -1,0 +1,462 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Home">
+    <section class="hero blur-in">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h2 class="hero-title fade-up">Conservation Pledge</h2>
+            <p class="hero-pledge fade-up delay-1">"I give my pledge as an American to save and faithfully defend from waste the natural resources of my country; it's air, soil and minerals, it's forests, waters, and wildlife."</p>
+            <div class="hero-address fade-up delay-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>54551 M51 North, Dowagiac MI 49047</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-section">
+        <div class="container grid-container">
+            <div class="card card-meeting slide-up">
+                <div class="card-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                </div>
+                <h3 class="card-title">Membership Meeting</h3>
+                <p class="card-text highlight">March 9, 2026 @ 7:30PM</p>
+                <p class="card-subtext">Join us for our upcoming membership meeting to discuss club events and conservation efforts.</p>
+            </div>
+
+            <div class="card card-safety slide-up delay-1">
+                <div class="card-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                </div>
+                <h3 class="card-title">Hunter Safety Classes</h3>
+                <p class="card-text">Dates have not been set for 2026.</p>
+                <p class="card-subtext">When future dates are set Club Members with email addresses on file will be notified of the dates and how to register. To search for classes in other locations go to: <a href="https://www.michigan.gov/dnr/things-to-do/hunting/education" target="_blank" rel="noopener noreferrer" class="text-link">Michigan DNR Hunter Education</a>. Scroll down and click on either "Traditional Hunter Education Course", or "Register for a Field Day" (if you have completed an online course).</p>
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section class="home-section about-section">
+        <div class="container grid-container align-center">
+            <div class="about-content slide-up">
+                <h2 class="section-title">About Our Club</h2>
+                <div class="title-underline"></div>
+                <p class="section-desc">Welcome to Dowagiac Conservation Club. We provide top-notch facilities and a welcoming community for outdoor enthusiasts of all skill levels. Placeholder text for our rich history, conservation efforts, and dedication to the community.</p>
+                <p class="section-desc">Join us to experience nature, develop outdoor skills, and be part of a group that values safety, education, and the preservation of our natural resources.</p>
+                <a href="/member-information" class="btn btn-primary mt-4">Learn More</a>
+            </div>
+            <div class="about-image slide-up delay-1">
+                <img src="/about-image.avif" alt="Conservation Activities" style="width: 100%; height: 400px; object-fit: cover; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" loading="lazy" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="home-section services-section bg-light-alt">
+        <div class="container">
+            <div class="section-header text-center slide-up">
+                <h2 class="section-title">Our Activities & Facilities</h2>
+                <div class="title-underline mx-auto"></div>
+                <p class="section-subtitle mx-auto">Discover the range of experiences we offer.</p>
+            </div>
+            <div class="grid-3 slide-up delay-1 mt-5">
+                <div class="service-card text-center">
+                    <div class="service-icon-box mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                    </div>
+                    <h3 class="card-title text-center mt-3">Archery Range</h3>
+                    <p class="card-subtext mt-2 text-center">Enjoy our indoor and outdoor archery ranges. Suitable for all ages and skill levels.</p>
+                </div>
+                <div class="service-card text-center">
+                    <div class="service-icon-box mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                    </div>
+                    <h3 class="card-title text-center mt-3">Trap Shooting</h3>
+                    <p class="card-subtext mt-2 text-center">Join us on trap nights. Perfect your aim with our excellent facilities.</p>
+                </div>
+                <div class="service-card text-center">
+                    <div class="service-icon-box mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                    </div>
+                    <h3 class="card-title text-center mt-3">Steel Shoot Challenge</h3>
+                    <p class="card-subtext mt-2 text-center">Test your speed and accuracy in our regular steel shoot challenges.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section class="home-section testimonials-section">
+        <div class="container">
+            <div class="section-header text-center slide-up">
+                <h2 class="section-title">What Our Members Say</h2>
+                <div class="title-underline mx-auto"></div>
+                <p class="section-subtitle mx-auto">Real experiences from our community.</p>
+            </div>
+            <div class="grid-3 slide-up delay-1 mt-5">
+                <div class="testimonial-card">
+                    <div class="stars text-gold text-lg mb-3">★★★★★</div>
+                    <p class="quote">"This club has the best facilities in the county. The community is incredibly welcoming and I've learned so much about conservation."</p>
+                    <p class="author mt-4 font-bold text-forest">- John Doe</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars text-gold text-lg mb-3">★★★★★</div>
+                    <p class="quote">"A fantastic place for family outings. The safety classes are top-notch and the instructors are very patient with beginners."</p>
+                    <p class="author mt-4 font-bold text-forest">- Jane Smith</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars text-gold text-lg mb-3">★★★★★</div>
+                    <p class="quote">"Great conservation efforts and well-maintained ranges. Proud to be a member for over 5 years. Highly recommended!"</p>
+                    <p class="author mt-4 font-bold text-forest">- Mike Johnson</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="home-section location-section bg-light-alt">
+        <div class="container grid-container align-center">
+            <div class="location-info slide-up">
+                <h2 class="section-title">Where to Find Us</h2>
+                <div class="title-underline"></div>
+                <p class="section-desc">We are conveniently located in Dowagiac, MI. Come and see our beautiful grounds and facilities.</p>
+                <div class="contact-details mt-5">
+                    <div class="detail-item mb-3 flex items-start">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gold mr-3 mt-1"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        <div>
+                            <strong class="text-forest block">Address:</strong>
+                            <span class="text-dark">54551 M51 North, Dowagiac MI 49047</span>
+                        </div>
+                    </div>
+                    <div class="detail-item flex items-start">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gold mr-3 mt-1"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                        <div>
+                            <strong class="text-forest block">Hours:</strong>
+                            <span class="text-dark">Open daily for members, check calendar for public events.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="location-map slide-up delay-1">
+                <div class="map-container" style="width: 100%; height: 450px; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2964.5168752616682!2d-86.1073498!3d42.010642999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88172fe5b34f0083%3A0x2d87da296ad4779b!2sDowagiac%20Conservation%20Club!5e0!3m2!1sen!2sin!4v1773731818269!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="home-section faq-section">
+        <div class="container">
+            <div class="section-header text-center slide-up">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="title-underline mx-auto"></div>
+                <p class="section-subtitle mx-auto">Find answers to common questions about the club.</p>
+            </div>
+            <div class="max-w-3xl mx-auto slide-up delay-1 mt-5">
+                <div class="faq-item">
+                    <h4 class="faq-question">How do I become a member?</h4>
+                    <p class="faq-answer">Membership requires attending a meeting or signing up during public events. Check our member info page for detailed steps and requirements.</p>
+                </div>
+                <div class="faq-item">
+                    <h4 class="faq-question">Are the ranges open to the public?</h4>
+                    <p class="faq-answer">Specific events are open to the public, such as trap shoots and archery leagues, but regular use is restricted to members and their guests.</p>
+                </div>
+                <div class="faq-item">
+                    <h4 class="faq-question">Are there age restrictions for safety classes?</h4>
+                    <p class="faq-answer">Please refer to the Michigan DNR website for official age and credential requirements regarding hunter safety courses.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="home-section contact-section bg-light-alt">
+        <div class="container text-center slide-up">
+            <div class="section-header">
+                <h2 class="section-title">Get in Touch</h2>
+                <div class="title-underline mx-auto"></div>
+                <p class="section-subtitle mx-auto">Have questions? We'd love to hear from you.</p>
+            </div>
+            <form class="contact-form max-w-xl mx-auto mt-5">
+                <div class="grid-2 mb-4">
+                    <input type="text" placeholder="Your Name" class="form-input" />
+                    <input type="email" placeholder="Your Email" class="form-input" />
+                </div>
+                <input type="text" placeholder="Subject" class="form-input mb-4" />
+                <textarea placeholder="Your Message" class="form-textarea mb-4" rows="5"></textarea>
+                <button type="button" class="btn btn-primary w-full">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="home-section cta-section text-center text-white">
+        <div class="cta-overlay"></div>
+        <div class="container relative z-10 slide-up">
+            <h2 class="hero-title text-gold">Ready to Join Our Community?</h2>
+            <p class="hero-pledge mt-4 mb-5 max-w-2xl mx-auto text-white">Experience the best hunting, fishing, and shooting sports in the area. Support conservation and make lasting memories.</p>
+            <div class="flex justify-center gap-4 flex-wrap mt-5">
+                <a href="/member-information" class="btn btn-primary btn-large">Become a Member</a>
+                <a href="/contact" class="btn btn-outline-white btn-large">Contact Us</a>
+            </div>
+        </div>
+    </section>
+</Layout>
+
+<style>
+/* Scoped Styles for Index Homepage */
+
+.home-section {
+    padding: 6rem 0;
+}
+
+.bg-light-alt {
+    background-color: #eef1ec;
+}
+
+.section-title {
+    font-size: 2.2rem;
+    color: var(--clr-forest);
+    margin-bottom: 0.5rem;
+}
+
+.title-underline {
+    height: 3px;
+    width: 60px;
+    background-color: var(--clr-gold);
+    margin-bottom: 1.5rem;
+}
+
+.section-subtitle {
+    color: var(--clr-olive);
+    font-size: 1.1rem;
+    max-width: 600px;
+}
+
+.section-desc {
+    font-size: 1.05rem;
+    color: var(--clr-dark);
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+}
+
+.align-center {
+    align-items: center;
+}
+
+/* Utilities */
+.mt-1 { margin-top: 0.25rem; }
+.mt-2 { margin-top: 0.5rem; }
+.mt-3 { margin-top: 1rem; }
+.mt-4 { margin-top: 1.5rem; }
+.mt-5 { margin-top: 3rem; }
+.mb-3 { margin-bottom: 1rem; }
+.mb-4 { margin-bottom: 1.5rem; }
+.mb-5 { margin-bottom: 3rem; }
+.mr-3 { margin-right: 0.75rem; }
+.mx-auto { margin-left: auto; margin-right: auto; }
+.text-center { text-align: center; }
+.flex { display: flex; }
+.items-start { align-items: flex-start; }
+.justify-center { justify-content: center; }
+.gap-4 { gap: 1rem; }
+.flex-wrap { flex-wrap: wrap; }
+.w-full { width: 100%; }
+.max-w-md { max-width: 28rem; }
+.max-w-xl { max-width: 36rem; }
+.max-w-2xl { max-width: 42rem; }
+.max-w-3xl { max-width: 48rem; }
+.block { display: block; }
+.relative { position: relative; }
+.z-10 { z-index: 10; }
+.text-forest { color: var(--clr-forest); }
+.text-gold { color: var(--clr-gold); }
+.text-dark { color: var(--clr-dark); }
+.text-white { color: var(--clr-white); }
+.text-lg { font-size: 1.25rem; }
+.font-bold { font-weight: 700; }
+
+/* Grid specific to these sections */
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+/* Placeholders */
+.placeholder-box {
+    width: 100%;
+    background-color: var(--clr-olive);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--clr-white);
+    font-weight: 600;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.img-placeholder {
+    height: 400px;
+}
+
+.map-placeholder {
+    height: 450px;
+}
+
+/* Service Cards */
+.service-icon-box {
+    width: 70px;
+    height: 70px;
+    background-color: var(--clr-forest);
+    color: var(--clr-gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition-fast);
+}
+
+.service-card:hover .service-icon-box {
+    transform: scale(1.1);
+    background-color: var(--clr-gold);
+    color: var(--clr-forest);
+}
+
+/* Testimonial Cards */
+.testimonial-card {
+    background: var(--clr-white);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border-top: 4px solid var(--clr-gold);
+    transition: var(--transition-fast);
+    text-align: left;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.quote {
+    font-style: italic;
+    color: var(--clr-dark);
+    line-height: 1.6;
+}
+
+/* FAQ Item */
+.faq-item {
+    background-color: var(--clr-white);
+    border-radius: 8px;
+    padding: 1.5rem 2rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    border-left: 4px solid var(--clr-forest);
+    text-align: left;
+}
+
+.faq-question {
+    font-size: 1.2rem;
+    color: var(--clr-forest);
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.faq-answer {
+    color: var(--clr-olive);
+    line-height: 1.6;
+}
+
+/* Form Styles */
+.form-input, .form-textarea {
+    width: 100%;
+    padding: 1rem 1.25rem;
+    border: 1px solid #d1d9cf;
+    border-radius: 8px;
+    background-color: var(--clr-white);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: var(--clr-dark);
+    transition: var(--transition-fast);
+}
+
+.form-input:focus, .form-textarea:focus {
+    outline: none;
+    border-color: var(--clr-gold);
+    box-shadow: 0 0 0 3px rgba(198, 168, 124, 0.2);
+}
+
+/* CTA Section */
+.cta-section {
+    background-image: url('/hero_bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    padding: 8rem 0;
+}
+
+.cta-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(28, 51, 39, 0.85); /* Deep forest green overlay */
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: var(--transition-fast);
+    cursor: pointer;
+    border: none;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: var(--clr-gold);
+    color: var(--clr-forest);
+}
+
+.btn-primary:hover {
+    background-color: #b59565;
+    color: var(--clr-forest);
+    transform: translateY(-2px);
+}
+
+.btn-large {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+}
+
+.btn-outline-white {
+    background-color: transparent;
+    border: 2px solid var(--clr-white);
+    color: var(--clr-white);
+}
+
+.btn-outline-white:hover {
+    background-color: var(--clr-white);
+    color: var(--clr-forest);
+}
+
+@media (max-width: 768px) {
+    .grid-2 { grid-template-columns: 1fr; }
+    .cta-section { padding: 5rem 0; }
+}
+</style>

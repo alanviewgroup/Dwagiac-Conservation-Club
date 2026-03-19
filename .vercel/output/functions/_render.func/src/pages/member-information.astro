@@ -1,0 +1,118 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Member Information">
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title fade-up">Member Information</h1>
+            <p class="fade-up delay-1">Stay updated with the latest news, announcements, and event info.</p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container grid-layout fade-up delay-2">
+            <div class="text-block">
+                <h3>About the Dowagiac Conservation Club</h3>
+                <p>Established in 1947, Dowagiac Conservation Club today has over 300 annual, life and junior members.</p>
+                <p>DCC is a non-profit organization dedicated to serving our youth and community by promoting outdoor sports, safety, understanding and conservation of natural resources.</p>
+                <p>Funds to maintain our club and support our mission are raised through membership dues and volunteer driven events like Sunday breakfast buffets, all-you-can-eat fish fries, trap shoots, 3-D archery, rim fire shoots, and special events like the Wild Game Dinner, Gun Show and Hunters Rendezvous. These efforts allow us to keep our membership dues very reasonable compared to other area clubs.</p>
+            </div>
+            
+            <div class="text-block">
+                <h3>Member Benefits</h3>
+                <ul class="benefits-list">
+                    <li>80+ Acres of wooded land, wetlands and access to Cook Lake for non-motor boating and fishing.</li>
+                    <li>Clubhouse and grounds available for rentals for banquets, meetings, receptions, etc.</li>
+                    <li>Outdoor rifle and pistol ranges.</li>
+                    <li>2 Lighted outdoor trap ranges.</li>
+                    <li>3-D Archery</li>
+                    <li>Children's play area.</li>
+                    <li>Handicapped accessible pier for fishing for lake fish such as bluegill, sunfish, perch, bass and pike.</li>
+                    <li>Membership in MUCC (Michigan United Conservation Clubs) with online access to Michigan Out-of-Doors magazine.</li>
+                </ul>
+
+                <div class="links-group">
+                    <a href="https://www.dowagiacconservation.org/membership-application" target="_blank">COME JOIN US - Click here for an application</a>
+                    <a href="#" target="_blank">Click for Bylaws</a>
+                    <a href="#" target="_blank">Range Rules</a>
+                    <a href="#" target="_blank">Rental Contract</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</Layout>
+
+<style>
+    .page-header {
+        padding: 140px 0 60px;
+        background-color: var(--clr-forest);
+        color: var(--clr-white);
+        text-align: center;
+    }
+    .page-title {
+        color: var(--clr-gold);
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    .content-section {
+        padding: 5rem 0;
+    }
+    .grid-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+    .text-block {
+        background: var(--clr-white);
+        padding: 3rem;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    }
+    .text-block h3 {
+        color: var(--clr-forest);
+        margin-bottom: 1.5rem;
+        font-size: 1.6rem;
+    }
+    .text-block p {
+        margin-bottom: 1rem;
+    }
+    .benefits-list {
+        list-style: none;
+        padding-left: 0;
+    }
+    .benefits-list li {
+        position: relative;
+        padding-left: 1.5rem;
+        margin-bottom: 0.75rem;
+    }
+    .benefits-list li::before {
+        content: "•";
+        color: var(--clr-gold);
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+        position: absolute;
+        left: 0;
+    }
+    .links-group {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .links-group a {
+        color: var(--clr-olive);
+        font-weight: 600;
+        text-decoration: underline;
+        text-decoration-color: var(--clr-gold);
+        transition: var(--transition-fast);
+    }
+    .links-group a:hover {
+        color: var(--clr-gold);
+    }
+    @media(max-width: 992px) {
+        .grid-layout { grid-template-columns: 1fr; }
+    }
+</style>

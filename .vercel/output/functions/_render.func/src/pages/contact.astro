@@ -1,0 +1,143 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Contact">
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title fade-up">Contact</h1>
+            <p class="fade-up delay-1">Get in touch with the Dowagiac Conservation Club.</p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container grid-layout fade-up delay-2">
+            <div class="text-block">
+                <h3>Get in Touch</h3>
+                <p>Questions and comments may be submitted with the email form, or mailed to the Dowagiac Conservation Club. For questions requiring immediate answers, phone numbers below may be helpful.</p>
+                <p><strong>Mailing Address:</strong><br>P.O. Box 424, 54551 M51 North, Dowagiac MI 49047</p>
+                
+                <div class="contact-list">
+                    <div class="contact-item"><strong>CLUB HOUSE</strong> <span>269-782-5508</span></div>
+                    <div class="contact-item"><strong>CLUB RENTAL (Sue Szymonski)</strong> <span>269-782-9161</span></div>
+                    <div class="contact-item"><strong>HUNTER SAFETY (Annette Lyons)</strong> <span>269-487-6161</span></div>
+                    <div class="contact-item"><strong>PRESIDENT (Craig Lyons)</strong> <span>269-876-7998</span></div>
+                    <div class="contact-item"><strong>FACEBOOK MGR (Adam Maxey)</strong> <span>269-340-2358</span></div>
+                </div>
+            </div>
+
+            <div class="text-block">
+                <h3>Send a Message</h3>
+                <form class="contact-form" action="#" method="POST">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="container fade-up delay-3" style="margin-top: 3rem;">
+            <div class="text-block" style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <h3>Visit Us</h3>
+                <p>Enjoy outdoor events, trap shooting, and community gatherings in Dowagiac, Michigan.</p>
+                <div class="address" style="margin: 2rem 0; padding: 2rem; background: var(--clr-light); border-radius: 8px; font-size: 1.25rem; font-weight: 600; color: var(--clr-olive); border: 1px solid rgba(0,0,0,0.05);">
+                    54551 M51 North<br>
+                    Dowagiac MI 49047
+                </div>
+                <!-- Embedded Google Map -->
+                <div class="map-container" style="width: 100%; height: 450px; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2964.5168752616682!2d-86.1073498!3d42.010642999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88172fe5b34f0083%3A0x2d87da296ad4779b!2sDowagiac%20Conservation%20Club!5e0!3m2!1sen!2sin!4v1773731818269!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+</Layout>
+
+<style>
+    .page-header {
+        padding: 140px 0 60px;
+        background-color: var(--clr-forest);
+        color: var(--clr-white);
+        text-align: center;
+    }
+    .page-title {
+        color: var(--clr-gold);
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    .content-section {
+        padding: 5rem 0;
+    }
+    .grid-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+    .text-block {
+        background: var(--clr-white);
+        padding: 3rem;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    }
+    .text-block h3 {
+        color: var(--clr-forest);
+        margin-bottom: 1.5rem;
+        font-size: 1.8rem;
+    }
+    .text-block p {
+        margin-bottom: 1.5rem;
+    }
+    .contact-list {
+        margin-top: 2rem;
+    }
+    .contact-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 0;
+        border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+    .contact-item strong {
+        color: var(--clr-forest);
+    }
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .form-group input, .form-group textarea {
+        width: 100%;
+        padding: 1rem;
+        border: 1px solid rgba(0,0,0,0.1);
+        border-radius: 6px;
+        font-family: inherit;
+    }
+    .form-group textarea {
+        min-height: 150px;
+        resize: vertical;
+    }
+    .btn-submit {
+        background: var(--clr-gold);
+        color: var(--clr-dark);
+        border: none;
+        padding: 1rem 2rem;
+        font-family: var(--font-heading);
+        font-weight: 700;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: var(--transition-fast);
+    }
+    .btn-submit:hover {
+        background: var(--clr-forest);
+        color: var(--clr-white);
+    }
+    @media(max-width: 992px) {
+        .grid-layout { grid-template-columns: 1fr; }
+    }
+</style>
